@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "n8n-local": {
+      "command": "node",
+      "args": [
+        "/workspaces/sin-mcp2/n8n/build/index.js"
+      ],
+      "env": {
+        "N8N_API_URL": "https://agents.sendthemmoney.com/api/v1",
+        "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiNjkwZTNhYy05NDJkLTQxM2MtYWI4Yi04OThmODNlMzUwYTkiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzUwMDg2ODUyfQ.izmKhcYanXXX4JN6AtpST_ouxR6rIYJa8QMtM5Hd4Q0"
+      }
+    }
+  }
+}
