@@ -1,0 +1,12 @@
+services:
+  dev-toolkit:
+    image: sinmcp2:latest
+    container_name: dev-toolkit
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./dev-toolkit/.env.example
+    restart: unless-stopped
+    # Uncomment the following lines to mount local code for development
+    volumes:
+      - ./dev-toolkit:/app
