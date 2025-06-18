@@ -1,9 +1,9 @@
 services:
   dev-toolkit:
-    image: sinmcp2:latest
+    image: musicheardworldwide/sinmcp2:latest
     container_name: dev-toolkit
     ports:
-      - "8000:8000"
+      - "8001:8001"
     env_file:
       - ./dev-toolkit/.env.example
     restart: unless-stopped

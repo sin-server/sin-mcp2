@@ -7,7 +7,30 @@
       ],
       "env": {
         "N8N_API_URL": "https://agents.sendthemmoney.com/api/v1",
-        "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiNjkwZTNhYy05NDJkLTQxM2MtYWI4Yi04OThmODNlMzUwYTkiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzUwMDg2ODUyfQ.izmKhcYanXXX4JN6AtpST_ouxR6rIYJa8QMtM5Hd4Q0"
+        "N8N_API_KEY": "yeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiNjkwZTNhYy05NDJkLTQxM2MtYWI4Yi04OThmODNlMzUwYTkiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzUwMDg2ODUyfQ.izmKhcYanXXX4JN6AtpST_ouxR6rIYJa8QMtM5Hd4Q0"
+      }
+    },
+    "dev-toolkit": {
+      "command": "docker",
+      "args": [
+        "run",
+        "musicheardworldwide/sinmcp2:latest",
+        "--container-name",
+        "sin-dev-tools",
+        "--network",
+        "sin-mcp2",
+        "--env",
+        "DEV_TOOLBOX_API_KEY=Dullownation123!",
+        "--env",
+        "SIN_SERVER_DATA_PATH=/workspaces/sin-mcp2/sin/sin_dev_toolbox",
+        "--rm",
+        "-v",
+        "/workspaces/sin-mcp2/sin/sin_dev_toolbox:/workspaces/sin-mcp2/sin/sin_dev_toolbox",
+        "sin-dev-toolbox"
+      ],
+      "env": {
+        "DEV_TOOLBOX_API_KEY": "REPLACE_WITH_YOUR_DEV_TOOLBOX_API_KEY",
+        "SIN_SERVER_DATA_PATH": "/workspaces/sin-mcp2/sin/sin_dev_toolbox"
       }
     }
   }
